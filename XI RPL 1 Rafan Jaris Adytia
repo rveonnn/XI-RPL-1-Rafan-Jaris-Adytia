@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #522258, #8C3061, #C63C51, #D95F59);
+            margin: 0;
+            padding: 0;
+        }
+        .dropdown {
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+        .dropdown-button {
+            background-color: #2e236c; 
+            color: white; 
+            padding: 10px 20px; 
+            font-size: 16px; 
+            border: none; 
+            cursor: pointer;
+            width: 100%; 
+            text-align: center;
+            border-radius: 5px; 
+        }
+        .dropdown-content {
+            display: none; 
+            padding: 10px;
+            background-color: #433D8B; 
+            border: 1px solid #ffffff; 
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+            margin-top: 5px; 
+            border-radius: 5px; 
+        }
+        .dropdown-content h3 {
+            margin: 0;
+            font-size: 16px;
+        }
+        .show {
+            display: block; /* Tampilkan dropdown */
+        }
+        .title {
+            text-align: center;
+            font-weight: bold;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">Pemrograman Berorientasi Objek (PBO)</h1>
+    <br />
+
+    <div class="dropdown">
+        <button class="dropdown-button" onclick="toggleDropdown('dropdown1')">Sejarah PBO</button>
+        <div id="dropdown1" class="dropdown-content">
+            <h3>
+                Sejarah Singkat Pemrograman Berorientasi Objek (OOP) OOP dimulai pada
+                1960-an dengan Simula, yang memperkenalkan konsep objek dan kelas.
+                Smalltalk, dikembangkan pada 1970-an, menambah fitur seperti
+                encapsulation dan polymorphism. C++ pada 1980-an mengintegrasikan OOP
+                dengan bahasa C, diikuti oleh Java dan Python pada 1990-an yang membawa
+                OOP ke arus utama. Di era 2000-an, bahasa seperti C#, Kotlin, dan Swift
+                melanjutkan evolusi OOP, menjadikannya relevan dalam pengembangan
+                perangkat lunak modern.
+            </h3>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropdown-button" onclick="toggleDropdown('dropdown2')">Perkembangan Awal Konsep Objek dan Kelas</button>
+        <div id="dropdown2" class="dropdown-content">
+            <h3>
+                Konsep objek dan kelas dimulai dengan Simula pada 1960-an,
+                memperkenalkan kelas, objek, dan pewarisan. Pada 1970-an, Smalltalk
+                menambah fitur seperti encapsulation dan polymorphism, memperdalam
+                penerapan konsep ini. Ini menjadi dasar Pemrograman Berorientasi Objek
+                (PBO).
+            </h3>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropdown-button" onclick="toggleDropdown('dropdown3')">Apa Bahasa Pemrograman Pertama yang Mendukung PBO?</button>
+        <div id="dropdown3" class="dropdown-content">
+            <h3>
+                Bahasa pemrograman pertama yang mendukung Pemrograman Berorientasi Objek
+                (PBO) adalah Simula. Dikembangkan pada awal 1960-an oleh Ole-Johan Dahl
+                dan Kristen Nygaard, Simula memperkenalkan konsep dasar seperti objek,
+                kelas, dan pewarisan, yang menjadi fondasi PBO.
+            </h3>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropdown-button" onclick="toggleDropdown('dropdown4')">Peran Bahasa Pemrograman dalam Mempopulerkan PBO</button>
+        <div id="dropdown4" class="dropdown-content">
+            <h3>
+                Smalltalk (1970-an): Memperkenalkan PBO secara menyeluruh dengan konsep
+                encapsulation, inheritance, dan polymorphism, serta menyediakan
+                lingkungan pengembangan interaktif. C++ (1980-an): Mengintegrasikan PBO
+                ke dalam bahasa C, menawarkan fleksibilitas untuk pengembangan sistem
+                dan aplikasi besar. Java (1990-an): Menetapkan PBO sebagai inti desain
+                bahasa dengan mesin virtual (JVM), mempopulerkan OOP untuk aplikasi web
+                dan perangkat lunak besar. Ketiga bahasa ini membantu menyebarluaskan
+                dan mempopulerkan Pemrograman Berorientasi Objek.
+            </h3>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropdown-button" onclick="toggleDropdown('dropdown5')">Bagaimana PBO Telah Mengubah Cara Perangkat Lunak Dikembangkan dan Dipelihara?</button>
+        <div id="dropdown5" class="dropdown-content">
+            <h3>
+                Modularitas dan Struktur:
+                <ul>
+                    <li>Pengembangan: Memungkinkan pembuatan perangkat lunak dari modul terpisah (kelas dan objek) yang lebih mudah dikelola.</li>
+                    <li>Pemeliharaan: Mempermudah perawatan karena perubahan di satu modul tidak mempengaruhi yang lain.</li>
+                </ul>
+                Reusabilitas:
+                <ul>
+                    <li>Pengembangan: Kode dapat digunakan kembali melalui pewarisan, mempercepat pengembangan dan mengurangi redundansi.</li>
+                    <li>Pemeliharaan: Perbaikan di kode yang digunakan bersama diterapkan secara otomatis di semua tempat yang menggunakannya.</li>
+                </ul>
+                Encapsulation:
+                <ul>
+                    <li>Pengembangan: Menyembunyikan detail implementasi, mempermudah pengembangan dengan fokus pada interaksi antar objek.</li>
+                    <li>Pemeliharaan: Mengurangi kompleksitas dan memungkinkan perubahan implementasi tanpa mempengaruhi bagian lain.</li>
+                </ul>
+                Polymorphism:
+                <ul>
+                    <li>Pengembangan: Memungkinkan metode yang sama berfungsi berbeda untuk objek yang berbeda, menyederhanakan kode.</li>
+                    <li>Pemeliharaan: Mengurangi duplikasi kode dan mempermudah adaptasi sistem.</li>
+                </ul>
+                Desain Berbasis Objek:
+                <ul>
+                    <li>Pengembangan: Membuat sistem lebih sesuai dengan dunia nyata, mempermudah pemahaman dan desain.</li>
+                    <li>Pemeliharaan: Mempermudah pemeliharaan karena sistem lebih intuitif dan alami.</li>
+                </ul>
+            </h3>
+        </div>
+    </div>
+     <div class="dropdown">
+        <button class="dropdown-button" onclick="toggleDropdown('dropdown6')">Perbandingan Pemograman Prosedural dan Berorientasi Objek</button>
+        <div id="dropdown6" class="dropdown-content">
+            <table border="2">
+          <tr>
+            <th>Aspek</th>
+            <th>Pemograman prosedural</th>
+            <th>Pemograman Berorientasi Objek</th>
+          </tr>
+          <tr>
+            <td>Struktur Program</td>
+            <td>Berbasis fungsi dan prosedur</td>
+             <td>Berbasis kelas dan objek</td>
+          </tr>
+          <tr>
+                    <td>Pendekatan</td>
+                    <td>Top-down, fokus pada prosedur dan alur logika</td>
+                    <td>Bottom-up, fokus pada objek yang berinteraksi </td>
+                </tr>
+                <tr>
+                    <td>Kelebihan</td>
+                    <td>Lebih sederhana dan mudah dipahami untuk program kecil | Memudahkan manajemen kode kompleks dan besar</td>
+                    <td>Memudahkan manajemen kode kompleks dan besar</td>
+                <tr>
+                    <td>Modularitas</td>
+                    <td>Modul Berbasis Fungsi</td>
+                    <td>Modul Berbasis Objek</td>
+                </tr>
+                    <td>Contoh bahasa</td>
+                    <td>C, Pascal, Fortran</td>
+                    <td>Java, C++, Python</td>
+                </tr>
+                <tr>
+                    <td>Keamanan Data</td>
+                    <td>Kurang aman, data dapat diakses langsung</td>
+                    <td>Lebih aman, data disembunyikan melalui enkapsulasi</td>
+                </tr>
+          </tr>
+        </table>
+
+    <script>
+        function toggleDropdown(id) {
+            var dropdownContent = document.getElementById(id);
+            if (dropdownContent.classList.contains('show')) {
+                dropdownContent.classList.remove('show');
+            } else {
+                var allDropdowns = document.querySelectorAll('.dropdown-content');
+                allDropdowns.forEach(function(dropdown) {
+                    dropdown.classList.remove('show');
+                });
+                dropdownContent.classList.add('show');
+            }
+        }
+    </script>
+</body>
+</html>
